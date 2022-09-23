@@ -8,16 +8,9 @@
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <section class="header-grid">
-        <header>
-            <a href="../index.html"><img src="../img/logo-templateshop.png" alt="" class="templateShop-emblem">
-            </a>
-            <a href="../index.html">
-                <h1 id="inicio">templat<span>ES</span>hop
-                </h1>
-            </a>
-            <p>tú plantilla preferida</p>            
-        </header>
+    <header class="header-section">
+        
+        <img src="../img/logo-marca.png" alt="" class="logo-marca-section">
         <article class="headerAdded">
             <div class="headerAdded-emblem searcher">
                 <img class="headerAdded-emblem" src="../img/searcher.png" alt="searcher">
@@ -25,10 +18,12 @@
             <div class="headerAdded-emblem shoppingCart">
                 <img class="headerAdded-emblem" src="../img/shopping-cart.png" alt="shoppingCart">
             </div>
-            <a href="../section/log-in.html" class="linkLog-in">
-                <img class="headerAdded-emblem" src="../img/log-in.png" alt="logIn">
-            </a>
-        </article>
+            <div class="headerAdded-emblem logIn">
+                <a href="../section/log-in.html" class="linkLog-in">
+                    <img class="headerAdded-emblem" src="../img/log-in.png" alt="logIn">
+                </a>
+            </div>
+    </header>
         <nav>
             <input type="checkbox" id="check">    
             <label for="check" class="checkbtn">
@@ -60,10 +55,10 @@
     </section>
     <section class="containerGrid-logIn">
         <form class="formularioLog-in">
-            <h1>Iniciar sesión:</h1>
+            <h1 id="iniciar-sesion">Iniciar sesión:</h1>
             <div class="inputBox">
-                <span>ID / e-mail:</span>
                 <input type="text" required="required">
+                <span>ID / e-mail:</span>
                 <i></i>
             </div>
             <div class="inputBox">
@@ -124,7 +119,7 @@
             <input class="buttonLog-in" type="submit" id="enviar" value="REGISTRARSE">
                 <section class="yacreada">    
                 <p>¿Ya tienes una cuenta?</p>
-                <a href="#inicio">Haz click aqui</a>
+                <a href="#iniciar-sesion">Haz click aqui</a>
                 </section>
         </form>
         <div class="help">

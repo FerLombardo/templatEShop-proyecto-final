@@ -5,19 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>templatEShop</title>
+    <link rel="shortcut icon" href="img/logo-templateshop.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
-    <section class="header-grid">
-        <header>
-            <a href="../index.html"><img src="../img/logo-templateshop.png" alt="" class="templateShop-emblem">
-            </a>
-            <a href="../index.html">
-                <h1 id="inicio">templat<span>ES</span>hop
-                </h1>
-            </a>
-            <p>tú plantilla preferida</p>            
-        </header>
+    <header class="header-section">
+        
+        <img src="../img/logo-marca.png" alt="" class="logo-marca-section">
         <article class="headerAdded">
             <div class="headerAdded-emblem searcher">
                 <img class="headerAdded-emblem" src="../img/searcher.png" alt="searcher">
@@ -25,44 +20,47 @@
             <div class="headerAdded-emblem shoppingCart">
                 <img class="headerAdded-emblem" src="../img/shopping-cart.png" alt="shoppingCart">
             </div>
-            <a href="../section/log-in.html" class="linkLog-in">
-                <img class="headerAdded-emblem" src="../img/log-in.png" alt="logIn">
-            </a>
-        </article>
-        <nav>
-            <input type="checkbox" id="check">    
-            <label for="check" class="checkbtn">
-                <i class="menu-icon">
-                    <img src="../img/menu-icon.png" alt="">
-                </i>
-            </label>
-            <ul>
+            <div class="headerAdded-emblem logIn">
+                <a href="../section/log-in.html" class="linkLog-in">
+                    <img class="headerAdded-emblem" src="../img/log-in.png" alt="logIn">
+                </a>
+            </div>
+        </article>    
+            <nav>
+                <input type="checkbox" id="check">    
                 <label for="check" class="checkbtn">
+                    <i class="menu-icon"><img src="../img/menu-icon.png" alt=""></i>
+                </label>
+                <a href="">desliza hacia abajo para ver más</a>
+                <ul>
+                    <label for="check" class="checkbtn">
                         <img src="../img/exit-navbar.png" alt="">
-                </label>
-                <h1>Navegación:</h1>
-                <a class="noneDecoration" href="../index.html">
-                    <li>Inicio</li>
-                </a>              
-                <a class="noneDecoration" href="../section/productos.html">
-                    <li>Productos</li>
-                </a>
-                <a class="noneDecoration" href="../section/servicios.html">
-                    <li>Servicios</li>
-                </a>
-                <a class="noneDecoration" href="../section/contacto.html">
-                    <li>Contacto</li>
-                </a>                
-                <a class="noneDecoration" href="../section/nosotros.html">
-                    <li>Nosotros</li>
-                </a>
-                <label for="check" class="checkbtn">
-                    <img src="../img/exit-navbar.png" alt="">
-                </label>
-            </ul>
-            </ul>
-        </nav>
-    </section>
+                    </label>
+                    <h1>Navegación:</h1>
+                    <a class="noneDecoration" href="../index.html">
+                        <li>Inicio</li>
+                    </a>              
+                    <a class="noneDecoration" href="../section/productos.html">
+                        <li>Productos</li>
+                    </a>
+                    <a class="noneDecoration" href="../section/servicios.html">
+                        <li>Servicios</li>
+                    </a>
+                    <a class="noneDecoration" href="../section/contacto.html">
+                        <li>Contacto</li>
+                    </a>                
+                    <a class="noneDecoration" href="../section/nosotros.html">
+                        <li>Nosotros</li>
+                    </a>
+                    <a class="noneDecoration" href="../section/mi-cuenta.html">
+                        <li>Mi cuenta</li>
+                    </a>
+                    <label for="check" class="checkbtn">
+                        <img src="../img/exit-navbar.png" alt="">
+                    </label>
+                </ul>
+            </nav>
+    </header>
     <main class="containerGrid-contact">
         <div class="aclaracionContacto">
             <h1>Contacto</h1>
@@ -83,39 +81,39 @@
         <figure class="elements-contact">
             <a href="https://wa.me/1136561845" target="_blank">
                 <img src="../img/whatsapp-emblem.png" alt="" class="contact-img">
+                <figcaption>
+                    <h3>Whats App</h3>
+                    <p>Celular: <br> +54-1136561xxx <br> 
+                    </p>
+                </figcaption>
             </a>    
-            <figcaption>
-                <h3>Whats App</h3>
-                <p>Celular: <br> +54-1136561xxx <br> 
-                </p>
-            </figcaption>
         </figure>
         <figure class="elements-contact">
             <a href="mailto:asd@hotmail.com" target="_blank">
                 <img src="../img/e-mail-emblem.png" alt="" class="contact-img">
+                <figcaption>
+                    <h3>e-mail</h3>
+                    <p>mandaunmail@gmail.com</p>
+                </figcaption>
             </a>    
-            <figcaption>
-                <h3>e-mail</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab voluptate vi</p>
-            </figcaption>
         </figure>
         <figure class="elements-contact">
             <a href="https://www.instagram.com" target="_blank">
                 <img src="../img/ig-emblem.png" alt="" class="contact-img">
+                <figcaption>
+                    <h3>Instagram</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab voluptate vi</p>
+                </figcaption>
             </a>    
-            <figcaption>
-                <h3>Instagram</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab voluptate vi</p>
-            </figcaption>
         </figure>
         <figure class="elements-contact">
             <a href="https://www.facebook.com" target="_blank">
                 <img src="../img/fb-emblem.png" alt="" class="contact-img">
+                <figcaption>
+                    <h3>Facebook</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab voluptate vi</p>
+                </figcaption>
             </a>    
-            <figcaption>
-                <h3>Facebook</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ab voluptate vi</p>
-            </figcaption>
         </figure>
         <figure class="elements-contact direct-contact">
             <img src="../img/direct-contact-emblem.png" alt="" class="contact-img">
@@ -164,5 +162,6 @@
             <h3>Copyright 2022</h3>
         </article>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

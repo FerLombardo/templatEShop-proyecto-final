@@ -5,21 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>templatEShop</title>
+    <link rel="shortcut icon" href="img/logo-templateshop.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <section class="header-grid">
-        <header>
-            <a href="./index.html">
-                <img src="./img/logo-templateshop.png" alt="" class="templateShop-emblem">
-            </a>
-            <a href="./index.html">
-                <h1>templat<span>ES</span>hop
-                </h1>
-            </a>
-            <p>tú plantilla preferida</p>
-            
-        </header>
+    <header>
+        <div id="carouselPortada" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2500">
+                    <img src="./img/portada-mujer.png" class="d-block w-100" alt="...">
+                    <button type="button" class="btn-genero">
+                        <a href="./section/log-in.html">mujer</a>
+                    </button>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./img/portada-hombre.png" class="d-block w-100" alt="...">
+                    <button type="button" class="btn-genero">
+                        <a href="./section/log-in.html">hombre</a>
+                    </button>
+                </div>
+                <div class="carousel-item" data-bs-interval="2500">
+                    <img src="./img/portada-unisex.png" class="d-block w-100" alt="...">
+                    <button type="button" class="btn-genero"> 
+                        <a href="./section/log-in.html">uni-sex</a>
+                    </button>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortada" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselPortada" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <img src="./img/logo-marca.png" alt="" class="logo-marca">
         <article class="headerAdded">
             <div class="headerAdded-emblem searcher">
                 <img class="headerAdded-emblem" src="./img/searcher.png" alt="searcher">
@@ -32,12 +54,13 @@
                     <img class="headerAdded-emblem" src="./img/log-in.png" alt="logIn">
                 </a>
             </div>
-        </article>
+        </article>   
         <nav>
             <input type="checkbox" id="check">    
             <label for="check" class="checkbtn">
                 <i class="menu-icon"><img src="./img/menu-icon.png" alt=""></i>
             </label>
+            <a href=".adSpace">desliza hacia abajo para ver más</a> -->
             <ul>
                 <label for="check" class="checkbtn">
                     <img src="./img/exit-navbar.png" alt="">
@@ -65,8 +88,8 @@
                     <img src="./img/exit-navbar.png" alt="">
                 </label>
             </ul>
-        </nav>
-    </section>
+        </nav> 
+    </header>
     <section class="container-grid">
         <article class="adSpace">
             
@@ -83,9 +106,10 @@
                 <img src="./img/contact-emblem.png" alt="" class="aside-emblem">
             </a>
         </aside>
-        <!-- CAROUSEL INTENTO -->
+
+            <!-- CAROUSEL INTENTO -->
         <section class="product"> 
-            <h2 class="product-category">best selling</h2>
+            <h2 class="product-category">Productos con descuentos</h2>
             <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
             <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
             <div class="product-container">
@@ -211,38 +235,6 @@
                 </div>
             </div>
         </section>
-        <!-- <article class="exhibitors">
-            <h2>PRODUCTOS CON DESCUENTO</h2>
-            <figure class="exhibitor">
-                <h3>Guitarra PRS</h3>
-                <img src="./img/guitarElectric.jpg" alt="guitarElectric">
-                <figcaption class="cardTittle">
-                    20% de descuento
-                </figcaption>
-                <div class="cardTittle">
-                    <h3>Guitarra eléctrica</h3>
-                    <p>Marca: PRS</p>
-                    <p>Disponibilidad: STOCK</p>
-                    <p>Precio:</p>
-                    <p>$125.000</p>
-                </div>
-            </figure>
-            <h2>NUEVOS INGRESOS</h2>
-            <figure class="exhibitor">
-                <h3>Guitarra PRS</h3>
-                <img src="./img/guitarElectric.jpg" alt="guitarElectric">
-                <figcaption class="cardTittle">
-                    20% de descuento
-                </figcaption>
-                <div class="cardTittle">
-                    <h3>Guitarra eléctrica</h3>
-                    <p>Marca: PRS</p>
-                    <p>Disponibilidad: STOCK</p>
-                    <p>Precio:</p>
-                    <p>$125.000</p>
-                </div>
-            </figure>
-        </article> -->
     </section>
     <footer class="footer-grid">
         <section class="contactEmblem">
@@ -255,9 +247,10 @@
             <div class="emblem logIn-footer"></div>
         </section>
         <article class="infoFooter">
-            <div>Copyright 2022</div>
+            <h3>Copyright 2022</h3>
         </article>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
