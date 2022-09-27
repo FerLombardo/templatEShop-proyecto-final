@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>templatEShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header class="header-section">
-        
-        <img src="../img/logo-marca.png" alt="" class="logo-marca-section">
+            <img src="../img/logo-marca.png" alt="" class="logo-marca-section">
         <article class="headerAdded">
-            <div class="headerAdded-emblem searcher">
+            <!-- <div class="headerAdded-emblem searcher">
                 <img class="headerAdded-emblem" src="../img/searcher.png" alt="searcher">
-            </div>
+            </div> -->
             <div class="headerAdded-emblem shoppingCart">
                 <img class="headerAdded-emblem" src="../img/shopping-cart.png" alt="shoppingCart">
             </div>
@@ -23,36 +23,43 @@
                     <img class="headerAdded-emblem" src="../img/log-in.png" alt="logIn">
                 </a>
             </div>
-    </header>
-        <nav>
-            <input type="checkbox" id="check">    
-            <label for="check" class="checkbtn">
-                <i class="menu-icon"><img src="../img/menu-icon.png" alt=""></i>
-            </label>
-            
-            <ul>
-                <label for="check" class="checkbtn">
-                    <img src="../img/exit-navbar.png" alt="">
-                </label>
-                <h1>Navegación:</h1>
-                <a class="noneDecoration" href="../index.html">
-                    <li>Inicio</li>
-                </a>              
-                <a class="noneDecoration" href="../section/productos.html">
-                    <li>Productos</li>
-                </a>
-                <a class="noneDecoration" href="../section/servicios.html">
-                    <li>Servicios</li>
-                </a>
-                <a class="noneDecoration" href="../section/contacto.html">
-                    <li>Contacto</li>
-                </a>                
-                <a class="noneDecoration" href="../section/nosotros.html">
-                    <li>Nosotros</li>
-                </a>
-            </ul>
-        </nav>
-    </section>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">sublimE</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Hombre</a></li>
+                      <li><a class="dropdown-item" href="#">Mujer</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     <section class="containerGrid-logIn">
         <form class="formularioLog-in">
             <h1 id="iniciar-sesion">Iniciar sesión:</h1>
@@ -148,5 +155,6 @@
             <h3>Copyright 2022</h3>
         </article>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
