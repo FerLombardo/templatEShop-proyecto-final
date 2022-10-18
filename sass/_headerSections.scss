@@ -1,0 +1,16 @@
+.header-section {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, rgba(21,21,21,1) 46%, rgba(48,27,63,1) 100%);
+    .logo-marca-section {
+        position: absolute;
+        width: 70%;
+        height: 50%;
+        padding: 5px 5px 5px 15px;
+        margin-top: 25px;
+    }
+}

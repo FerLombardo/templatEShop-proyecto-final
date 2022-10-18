@@ -4,34 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plantilla para e-commerce">
     <title>templatEShop</title>
     <link rel="shortcut icon" href="img/logo-templateshop.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
-    <header>
-        <div id="carouselPortada" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="2500">
-                    <img src="./img/portada-mujer.png" class="d-block w-100" alt="...">
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Barra de navegación</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.   html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./section/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"  data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Hombre</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Mujer</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./section/log-in.html">Iniciar sesión</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search"     aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+<section class="container-presentacion">
+    <div id="carouselPortada" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+                <img src="./img/portada-mujer.png" class="d-block w-100" alt="portada-mujer-ropa">
+                <div class="complemento">  
+                    <h1>sublimE</h1>
+                    <h2>Colección mujer 2022</h2>
                     <button type="button" class="btn-genero">
                         <a href="./section/log-in.html">mujer</a>
                     </button>
                 </div>
-                <div class="carousel-item" data-bs-interval="2500">
-                    <img src="./img/portada-hombre.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="./img/portada-hombre.png" class="d-block w-100" alt="portada-hombre-ropa">
+                <div class="complemento">
+                    <h1>sublimE</h1>
+                    <h2>Colección hombre 2022</h2>
                     <button type="button" class="btn-genero">
                         <a href="./section/log-in.html">hombre</a>
                     </button>
                 </div>
-                <div class="carousel-item" data-bs-interval="2500">
-                    <img src="./img/portada-unisex.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+                <img src="./img/portada-unisex.png" class="d-block w-100" alt="portada-unisex-ropa">
+                <div class="complemento">
+                    <h1>sublimE</h1>
+                    <h2>Colección uni-sex 2022</h2>
                     <button type="button" class="btn-genero"> 
                         <a href="./section/log-in.html">uni-sex</a>
                     </button>
                 </div>
             </div>
+        </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortada" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -40,92 +95,11 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
-        <img src="./img/logo-marca.png" alt="" class="logo-marca">
-        <article class="headerAdded">
-            <!-- <div class="headerAdded-emblem searcher">
-                <img class="headerAdded-emblem" src="./img/searcher.png" alt="searcher">
-            </div> -->
-            <div class="headerAdded-emblem shoppingCart">
-                <img class="headerAdded-emblem" src="./img/shopping-cart.png" alt="shoppingCart">
-            </div>
-            <div class="headerAdded-emblem logIn">
-                <a href="./section/log-in.html" class="linkLog-in">
-                    <img class="headerAdded-emblem" src="./img/log-in.png" alt="logIn">
-                </a>
-            </div>
-        </article>
-    </header>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">sublimE</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./section/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Hombre</a></li>
-                  <li><a class="dropdown-item" href="#">Mujer</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">Contacto</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-        <!-- <nav>
-            <input type="checkbox" id="check">    
-            <label for="check" class="checkbtn">
-                <i class="menu-icon"><img src="./img/menu-icon.png" alt=""></i>
-            </label>
-            <a href=".adSpace">desliza hacia abajo para ver más  </a> 
-            <ul>
-                <label for="check" class="checkbtn">
-                    <img src="./img/exit-navbar.png" alt="">
-                </label>
-                <h1>Navegación:</h1>
-                <a class="noneDecoration" href="./index.html">
-                    <li>Inicio</li>
-                </a>              
-                <a class="noneDecoration" href="./section/productos.html">
-                    <li>Productos</li>
-                </a>
-                <a class="noneDecoration" href="./section/servicios.html">
-                    <li>Servicios</li>
-                </a>
-                <a class="noneDecoration" href="./section/contacto.html">
-                    <li>Contacto</li>
-                </a>                
-                <a class="noneDecoration" href="./section/nosotros.html">
-                    <li>Nosotros</li>
-                </a>
-                <a class="noneDecoration" href="./section/mi-cuenta.html">
-                    <li>Mi cuenta</li>
-                </a>
-                <label for="check" class="checkbtn">
-                    <img src="./img/exit-navbar.png" alt="">
-                </label>
-            </ul>
-        </nav>  -->
+    </div>
+        
+            
+
+    </section>
     <section class="container-grid">
         <article class="adSpace">
             
@@ -135,11 +109,11 @@
         <aside class="aside">
             <a href="./section/productos.html" class="link-emblem">
                 <h3>Productos</h3>
-                <img src="./img/products-emblem.png" alt="" class="aside-emblem">
+                <img src="./img/products-emblem.png" alt="logo-productos" class="aside-emblem">
             </a>
             <a href="./section/contacto.html" class="link-emblem">
                 <h3>Contactanos</h3>
-                <img src="./img/contact-emblem.png" alt="" class="aside-emblem">
+                <img src="./img/contact-emblem.png" alt="logo-contacto" class="aside-emblem">
             </a>
         </aside>
 
@@ -148,18 +122,23 @@
             <h2 class="product-category">Productos con descuentos</h2>
             <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
             <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
-            <div class="product-container">
+            <div class="product-carousel">
                 <div class="product-card">
                     <div class="product-image">
                         <span class="discount-tag">20% off</span>
-                        <img src="img/1.png" class="product-thumb" alt="">
+                        <img src="img/1.png" class="product-thumb" alt="buzoBlanco-oversize-hombre-coleccion2022">
                         <button class="card-btn">añadir al carro</button>
                     </div>
                         <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Ver más
-                    </button>
-                      
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Ver más
+                        </button>
+                        <div class="product-info">
+                            <h2 class="product-brand">Buzo Tuareq white</h2>
+                            <p class="product-short-description">Buzo Tuareq blanco estampado</p>
+                            <span class="price">precio actual: $20</span><span class="actual-price">$40</span>
+                        </div>
+                
                         <!-- Modal -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-scrollable">
@@ -170,7 +149,7 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <img src="img/1.png" class="product-thumb" alt="">
+                                    <img src="img/1.png" class="product-thumb" alt="buzoBlanco-oversize-hombre-coleccion2022">
                                     <h5>Descripción:</h5>
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero voluptatum ipsum non maiores quos atque quis itaque cumque</p>
                                     <h5>Talles:</h5>
@@ -192,7 +171,7 @@
                                     </div>
                                     <p>Guía de talles</p>
                                     <h3>Precio:</h3>
-                                    <h2>$50</h2>
+                                    <h2>$20</h2>
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -201,35 +180,30 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-info">
-                        <h2 class="product-brand">Buzo Tuareq white</h2>
-                        <p class="product-short-description">Buzo Tuareq blanco estampado</p>
-                        <span class="price">precio actual: $20</span><span class="actual-price">$40</span>
-                    </div>
                 </div>
                 
                 <div class="product-card">
                     <div class="product-image">
                         <span class="discount-tag">50% off</span>
-                        <img src="img/2.png" class="product-thumb" alt="">
+                        <img src="img/2.png" class="product-thumb" alt="buzo-oversize-hombre-coleccion2022-estampado">
                         <button class="card-btn">añadir al carro</button>
                     </div>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
                             Ver más
                         </button>
-                          
+                        
                             <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel">Buzo Tuareq white</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">brand</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/1.png" class="product-thumb" alt="">
+                                        <img src="img/2.png" class="product-thumb" alt="buzoBlanco-oversize-hombre-coleccion2022-estampado">
                                         <h3>Descripción:</h3>
                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero voluptatum ipsum non maiores quos atque quis itaque cumque</p>
                                         <h3>Talles:</h3>
@@ -276,7 +250,7 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Ver más
                         </button>
-                          
+                        
                             <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -309,7 +283,7 @@
                                         </div>
                                         <p>Guía de talles</p>
                                         <h3>Precio:</h3>
-                                        <h2>$50</h2>
+                                        <h2>$20</h2>
                                     </div>
                                     <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -334,7 +308,7 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Ver más
                         </button>
-                          
+                        
                             <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -345,7 +319,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <img src="img/1.png" class="product-thumb" alt="">
+                                        <img src="img/2.png" class="product-thumb" alt="">
                                         <h3>Descripción:</h3>
                                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima vero voluptatum ipsum non maiores quos atque quis itaque cumque</p>
                                         <h3>Talles:</h3>
@@ -392,7 +366,7 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Ver más
                         </button>
-                          
+                        
                             <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
@@ -450,7 +424,7 @@
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Ver más
                         </button>
-                          
+                        
                             <!-- Modal -->
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">

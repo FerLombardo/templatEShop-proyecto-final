@@ -1,0 +1,845 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #151515;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.navbar {
+  background-color: #151515;
+}
+.navbar .container-fluid {
+  background-color: #301B3F;
+}
+.navbar .container-fluid a {
+  color: white;
+  font-size: x-large;
+}
+.navbar .container-fluid .navbar-toggler {
+  background-color: white;
+  border-radius: 3px;
+}
+.navbar .container-fluid .navbar-collapse ul {
+  background-color: transparent;
+}
+.navbar .container-fluid .navbar-collapse ul li {
+  font-size: larger;
+}
+
+.container-presentacion {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.container-presentacion #carouselPortada {
+  position: relative;
+}
+.container-presentacion #carouselPortada .complemento {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 155px 0 155px 125px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: start;
+}
+.container-presentacion #carouselPortada .complemento .btn-genero {
+  height: 50px;
+  width: 130px;
+  top: 55%;
+  bottom: 20%;
+  left: 40%;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2509803922);
+  background-color: rgba(223, 223, 223, 0.213);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.container-presentacion #carouselPortada .complemento .btn-genero a {
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.header-section {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgb(21, 21, 21) 46%, rgb(48, 27, 63) 100%);
+}
+.header-section .logo-marca-section {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  padding: 5px 5px 5px 15px;
+  margin-top: 25px;
+}
+
+.container-grid {
+  grid-area: container-grid;
+  text-align: center;
+  width: 100%;
+  background-color: #151515;
+  padding-bottom: 50px;
+  display: grid;
+  gap: 0px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 125px 125px 125px 145px;
+  grid-template-areas: "ad-space ad-space" "ad-space ad-space" "ad-space ad-space" "aside aside";
+}
+.container-grid .adSpace {
+  grid-area: ad-space;
+  margin-top: 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.container-grid .adSpace img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px -2px 15px 5px rgba(0, 0, 0, 0.739);
+}
+.container-grid aside {
+  grid-area: aside;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.container-grid aside img {
+  width: 65px;
+  height: 65px;
+}
+.container-grid aside .link-emblem {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 0px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 100vw;
+}
+.product h2 {
+  color: white;
+  padding: 0 10vw;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 20px 0px 10px 0px;
+  text-transform: capitalize;
+}
+.product .pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+.product .nxt-btn {
+  right: 0;
+}
+.product .pre-btn,
+.product .nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 8;
+  background: transparent;
+}
+.product .pre-btn img,
+.product .nxt-btn img {
+  opacity: 1;
+}
+.product .pre-btn:hover img,
+.product .nxt-btn:hover img {
+  opacity: 1;
+}
+.product .product-carousel {
+  color: white;
+  padding: 2vh 10vw;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: clip;
+  scroll-behavior: smooth;
+  height: 700px;
+}
+.product .product-carousel .product-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 620px;
+  margin-right: 40px;
+}
+.product-card .product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+.product-card .discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ff7d7d;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+}
+.product-card .product-thumb {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-card .card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  opacity: 0;
+}
+.product-card .card-btn .product-card:hover .card-btn {
+  opacity: 1;
+}
+.product-card .card-btn .card-btn:hover {
+  cursor: pointer;
+  background: #ff7d7d;
+  color: #fff;
+}
+.product-card .product-info {
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding-top: 10px;
+}
+.product-card .product-info h2 {
+  width: 100%;
+  color: red;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  font-size: 25px;
+  word-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.product-card .product-short-description {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+.product-card .price {
+  font-weight: 900;
+  font-size: 20px;
+}
+.product-card .actual-price {
+  margin-left: 20px;
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* Mobile First */
+/* ****** MODAL PRODUCTOS INDEX ******* */
+.modal-title {
+  color: black;
+  font-size: x-large;
+}
+
+.modal-body {
+  color: black;
+}
+
+.modal-body img {
+  width: 60%;
+  height: 60%;
+}
+
+.modal-body p {
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.modal-content {
+  background-color: #efefef;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.contactEmblem {
+  grid-area: contact-e;
+}
+
+.rightEmblem {
+  grid-area: right-e;
+}
+
+footer {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(180deg, rgb(21, 21, 21) 46%, rgb(48, 27, 63) 99%);
+  grid-area: footer;
+  box-shadow: 0px 10px 20px 12px rgba(0, 0, 0, 0.739);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+footer h3 {
+  margin-bottom: 10px;
+}
+
+.infoFooter {
+  color: #F7ECDE;
+  font-size: x-large;
+  grid-area: info-footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/******* TRABAJANDO PÁGINA LOG IN ***********/
+.containerGrid-logIn {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "formularioLog-in" "form" "form" "help";
+  justify-content: center;
+  align-items: start;
+}
+
+.formularioLog-in {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 25px 0px 25px 0px;
+  grid-area: formularioLog-in;
+  background-color: #151515;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 5px 57px 4px rgba(0, 0, 0, 0.74);
+  gap: 15px;
+  color: white;
+}
+
+.formularioLog-in a {
+  color: #54BAB9;
+  text-align: none;
+}
+
+.inputBox {
+  position: relative;
+  width: 250px;
+}
+
+.inputBox input {
+  width: 100%;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 1em;
+  padding: 10px 0 5px;
+  letter-spacing: 0.1em;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px 0 5px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  pointer-events: none;
+  letter-spacing: 0.1em;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #2196f3;
+  transform: translateY(-16px);
+  font-size: 0.65em;
+}
+
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.inputBox i::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #F7ECDE, hsl(27deg, 78%, 55%), hsl(0deg, 0%, 0%), #54BAB9, #F7ECDE);
+  -webkit-animation: animate 2s linear infinite;
+          animation: animate 2s linear infinite;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ i::before,
+.inputBox input:focus ~ i::before {
+  left: 0;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 250px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 250px;
+  }
+}
+.inputBox .calendary {
+  position: relative;
+  display: inline-flex;
+  right: -3px;
+  width: 50%;
+  padding-left: 50%;
+}
+
+.formulario {
+  grid-area: form;
+  background-color: #151515;
+  display: flex;
+  text-align: justify;
+  width: 100%;
+  height: auto;
+  padding: 15px 0px 5px 0px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 4px 28px -4px rgba(0, 0, 0, 0.74);
+  gap: 15px;
+}
+
+.formulario h1 {
+  color: white;
+}
+
+.formulario p {
+  color: white;
+  margin: 5px 0px 5px 0px;
+}
+
+.yacreada {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.yacreada a {
+  color: #54BAB9;
+  text-decoration: underline;
+}
+
+.formulario p label {
+  margin: 2px 0px 0px 0px;
+  display: inline-block;
+}
+
+.buttonSpecial {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.buttonNac {
+  margin: 5px 0px 5px 0px;
+  top: 170px;
+}
+
+.buttonLog-in {
+  color: rgb(147, 147, 147);
+  margin: 10px 0px 5px 0px;
+  width: 130px;
+  height: 30px;
+  background-color: #E9DAC1;
+  font-weight: bold;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.74);
+}
+
+.section-genero {
+  display: flex;
+  position: relative;
+  gap: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+  justify-content: space-around;
+  margin-top: 5px;
+  color: gray;
+}
+
+.selector {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+}
+
+.help {
+  background-color: #151515;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin: 0px 0 20px 0;
+  line-height: 1.5em;
+  color: white;
+}
+
+.help a {
+  color: #54BAB9;
+  text-decoration: underline;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.infoBeneficios p {
+  margin-top: 30px;
+  line-height: 1em;
+}
+
+/*********** PAGINA DE CONTACTO ***********/
+.ig-contact {
+  grid-area: ig-contact;
+}
+
+.fb-contact {
+  grid-area: fb-contact;
+}
+
+.wpp-contact {
+  grid-area: wpp-contact;
+}
+
+.tel-contact {
+  grid-area: tel-contact;
+}
+
+.content-contact ul {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+
+.direct-contact {
+  grid-area: direct-contact;
+}
+
+.aclaracionContacto {
+  grid-area: aclaracion;
+}
+
+.containerGrid-contact {
+  background-color: #151515;
+  width: 100%;
+  height: 1900px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 28% repeat(2, 180px) 550px;
+  grid-template-areas: "aclaracion aclaracion" "ig-contact fb-contact" "wpp-contact tel-contact" "direct-contact direct-contact";
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+
+.aclaracionContacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 15px;
+}
+
+.aclaracionContacto h1 {
+  margin-top: 15px;
+}
+
+.aclaracionContacto .horario {
+  line-height: 1.2em;
+  width: 80%;
+  background-color: #3C415C;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
+}
+
+.aclaracionContacto h2 {
+  text-decoration: underline;
+  margin-bottom: 8px;
+  padding-top: 2px;
+  line-height: 1em;
+}
+
+.aclaracionContacto ul {
+  list-style-type: none;
+  font-weight: bolder;
+}
+
+.aclaracionContacto p {
+  text-align: justify;
+  word-spacing: 0px;
+  margin-right: 10px;
+}
+
+.aclaracionContacto h3 {
+  margin-top: 0.2rem;
+}
+
+.ayudaInteraccion {
+  display: inline-block;
+  width: 100%;
+}
+
+.contact-img {
+  width: 40px;
+  height: 40px;
+}
+
+.elements-contact {
+  width: 150px;
+  height: 160px;
+  background-color: #3C415C;
+  border-radius: 4px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
+}
+
+.elements-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.elements-contact h3 {
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.elements-contact p {
+  line-height: 13px;
+  font-size: 12.5px;
+}
+
+.formDirect-contact {
+  margin: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.formDirect-contact div {
+  margin: 5px 0 5px 0;
+}
+
+.formDirect-contact label {
+  margin-top: 15px;
+}
+
+.formDirect-contact textarea {
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin: 10px 0px 10px 0px;
+  background-color: #F7ECDE;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 2px;
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
+}
+
+.formDirect-contact .buttonLog-in {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.direct-contact {
+  width: 310px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 200px;
+}
+
+.direct-contact img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.cerrarNavBar ul::before {
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.cerrarNavBar ul:valid ~ i::before,
+.cerrarNavBar ul:focus ~ i::before {
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .container-presentacion {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  #carouselPortada {
+    width: 100%;
+    /* box-shadow: 0px 0px 40px 40px rgb(0 0 0); */
+  }
+  .d-block {
+    height: 600px;
+  }
+  .logo-marca {
+    height: 150px;
+    width: 450px;
+    margin: 0;
+  }
+  .btn-genero {
+    border: 2px solid rgb(79, 79, 79);
+    width: 150px;
+    height: 65px;
+  }
+  .btn-genero a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+  /* .headerAdded {
+      justify-content: space-evenly;
+  }
+  .headerAdded-emblem img{
+      width: 80px;
+      height: 80px;
+      border: 2px solid rgb(79, 79, 79);
+
+  } */
+}/*# sourceMappingURL=styles.css.map */

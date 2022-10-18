@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #151515;
+    .container-fluid {
+        background-color: #301B3F;
+        a {
+            color: white;
+            font-size: x-large;
+        }
+        .navbar-toggler {
+            background-color: white;
+            border-radius: 3px;
+            
+        }
+        .navbar-collapse {
+            ul {
+            background-color: transparent;
+                li {
+                    font-size: larger;
+                }
+            }
+        }    
+    }
+}
