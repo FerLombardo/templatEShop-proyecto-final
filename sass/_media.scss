@@ -37,3 +37,19 @@
         height: 777px;
     }
 }
+
+@media (max-width:425px) {
+    .container-presentacion {
+        img {
+            position: relative;
+            left: -400px;
+            width: 905px!important;
+        }
+        .complemento {
+            padding-left: 40px!important;
+        }
+    }
+
+
+
+}

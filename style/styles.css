@@ -347,6 +347,16 @@ body {
     height: 777px;
   }
 }
+@media (max-width: 425px) {
+  .container-presentacion img {
+    position: relative;
+    left: -400px;
+    width: 905px !important;
+  }
+  .container-presentacion .complemento {
+    padding-left: 40px !important;
+  }
+}
 .modal-content {
   background-color: #efefef;
 }
