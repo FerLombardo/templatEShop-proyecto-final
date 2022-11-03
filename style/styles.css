@@ -346,6 +346,12 @@ body {
   .imgPubli {
     height: 777px;
   }
+  .adSpace {
+    height: 666px;
+  }
+  .container-grid {
+    grid-template-rows: 200px 200px 200px 200px;
+  }
 }
 @media (max-width: 425px) {
   .container-presentacion img {
@@ -355,6 +361,11 @@ body {
   }
   .container-presentacion .complemento {
     padding-left: 40px !important;
+  }
+  .container-presentacion .complemento .btn-genero a {
+    color: black !important;
+    font-size: large;
+    font-weight: bolder;
   }
 }
 .modal-content {

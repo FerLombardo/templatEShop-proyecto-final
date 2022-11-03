@@ -36,6 +36,12 @@
     .imgPubli {
         height: 777px;
     }
+    .adSpace {
+        height: 666px;
+    }
+    .container-grid {
+        grid-template-rows: 200px 200px 200px 200px;
+    }
 }
 
 @media (max-width:425px) {
@@ -46,10 +52,15 @@
             width: 905px!important;
         }
         .complemento {
-            padding-left: 40px!important;
+            padding-left: 40px!important;        
+            .btn-genero {
+                a {
+                    color: black!important;
+                    font-size: large;
+                    font-weight: bolder;
+                }    
+            }
+
         }
     }
-
-
-
 }
