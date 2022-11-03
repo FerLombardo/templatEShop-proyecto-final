@@ -17,11 +17,16 @@ body {
   height: min-content;
 }
 
+.btn {
+  margin: 10px;
+}
+
 .navbar {
-  background-color: #151515;
+  background-color: #301B3F !important;
 }
 .navbar .container-fluid {
   background-color: #301B3F;
+  margin-top: 15px;
 }
 .navbar .container-fluid a {
   color: white;
@@ -37,6 +42,9 @@ body {
 .navbar .container-fluid .navbar-collapse ul li {
   font-size: larger;
 }
+.navbar .container-fluid .navbar-collapse .d-flex {
+  margin-bottom: 15px;
+}
 
 .container-presentacion {
   width: 100%;
@@ -49,6 +57,12 @@ body {
 }
 .container-presentacion #carouselPortada {
   position: relative;
+}
+.container-presentacion #carouselPortada img {
+  overflow: hidden;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .container-presentacion #carouselPortada .complemento {
   width: 100%;
@@ -201,7 +215,7 @@ body {
   overflow-x: auto;
   overflow-y: clip;
   scroll-behavior: smooth;
-  height: 700px;
+  height: 600px;
 }
 .product .product-carousel .product-carousel::-webkit-scrollbar {
   display: none;
@@ -310,7 +324,7 @@ body {
     width: 100%;
   }
   .d-block {
-    height: 600px;
+    height: 925px;
   }
   .logo-marca {
     height: 150px;
@@ -329,58 +343,27 @@ body {
     font-size: x-large;
     font-weight: bolder;
   }
+  .imgPubli {
+    height: 777px;
+  }
 }
-/* Mobile First */
-/* ****** MODAL PRODUCTOS INDEX ******* */
-.modal-title {
-  color: black;
-  font-size: x-large;
-}
-
-.modal-body {
-  color: black;
-}
-
-.modal-body img {
-  width: 60%;
-  height: 60%;
-}
-
-.modal-body p {
-  font-size: small;
-  margin-bottom: 5px;
-}
-
 .modal-content {
   background-color: #efefef;
 }
-
-.btn {
-  margin: 10px;
+.modal-content .modal-header .modal-title {
+  color: black;
+  font-size: x-large;
 }
-
-.ubicacion {
-  display: inline-block;
-  margin: 1rem 1rem 1rem 1rem;
+.modal-content .modal-body {
+  color: black;
 }
-
-.datafooter p, h5 {
-  color: white;
-  margin: 0;
+.modal-content .modal-body img {
+  width: 60%;
+  height: 30%;
 }
-
-.contactEmblems {
-  margin-top: 1rem;
-}
-
-.contactEmblems a {
-  text-decoration: none;
-}
-
-.contactEmblems img {
-  height: 30px;
-  width: 30px;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+.modal-content .modal-body p {
+  font-size: small;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -391,8 +374,7 @@ footer {
   background: linear-gradient(180deg, rgb(21, 21, 21) 46%, rgb(48, 27, 63) 99%);
   box-shadow: 0px 10px 20px 12px rgba(0, 0, 0, 0.739);
 }
-
-.footer-grid {
+footer .footer-grid {
   width: 100%;
   height: -webkit-min-content;
   height: -moz-min-content;
@@ -401,12 +383,33 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 1rem;
   text-align: center;
 }
-
-.infoFooter {
+footer .footer-grid .datafooter {
+  margin-top: 10px;
+}
+footer .footer-grid .datafooter p, footer .footer-grid .datafooter h5 {
+  color: white;
+  margin: 0;
+}
+footer .footer-grid .datafooter .contactEmblems {
+  margin-top: 1rem;
+}
+footer .footer-grid .datafooter .contactEmblems a {
+  text-decoration: none;
+}
+footer .footer-grid .datafooter .contactEmblems img {
+  height: 30px;
+  width: 30px;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+footer .footer-grid .ubicacion {
+  display: inline-block;
+  margin: 1rem 1rem 1rem 1rem;
+}
+footer .copyRight {
   color: #F7ECDE;
   font-size: x-large;
   display: flex;
@@ -414,6 +417,163 @@ footer {
   align-items: center;
 }
 
+.containerGrid-contact {
+  background-color: #151515;
+  width: 100%;
+  height: 1900px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 28% repeat(2, 180px) 550px;
+  grid-template-areas: "aclaracion aclaracion" "ig-contact fb-contact" "wpp-contact tel-contact" "direct-contact direct-contact";
+  align-items: center;
+  gap: 5px;
+  color: white;
+}
+.containerGrid-contact .aclaracionContacto {
+  grid-area: aclaracion;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 15px;
+}
+.containerGrid-contact .aclaracionContacto h1 {
+  margin-top: 15px;
+}
+.containerGrid-contact .aclaracionContacto h2 {
+  text-decoration: underline;
+  margin-bottom: 8px;
+  padding-top: 2px;
+  line-height: 1em;
+}
+.containerGrid-contact .aclaracionContacto h3 {
+  margin-top: 0.2rem;
+}
+.containerGrid-contact .aclaracionContacto p {
+  text-align: justify;
+  word-spacing: 0px;
+  margin-right: 10px;
+}
+.containerGrid-contact .aclaracionContacto .horario {
+  line-height: 1.2em;
+  width: 80%;
+  background-color: #3C415C;
+  padding: 10px 10px 10px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
+}
+.containerGrid-contact .aclaracionContacto .horario ul {
+  list-style-type: none;
+  font-weight: bolder;
+}
+.containerGrid-contact .aclaracionContacto .ayudaInteraccion {
+  display: inline-block;
+  width: 100%;
+}
+.containerGrid-contact .elements-contact {
+  width: 150px;
+  height: 160px;
+  background-color: #3C415C;
+  border-radius: 4px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
+}
+.containerGrid-contact .elements-contact a {
+  color: white;
+  text-decoration: none;
+}
+.containerGrid-contact .elements-contact h3 {
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.containerGrid-contact .elements-contact p {
+  line-height: 13px;
+  font-size: 12.5px;
+}
+.containerGrid-contact .elements-contact .contact-img {
+  width: 40px;
+  height: 40px;
+}
+.containerGrid-contact .elements-contact .ig-contact {
+  grid-area: ig-contact;
+}
+.containerGrid-contact .elements-contact .fb-contact {
+  grid-area: fb-contact;
+}
+.containerGrid-contact .elements-contact .wpp-contact {
+  grid-area: wpp-contact;
+}
+.containerGrid-contact .elements-contact .tel-contact {
+  grid-area: tel-contact;
+}
+.containerGrid-contact .direct-contact {
+  grid-area: direct-contact;
+  width: 310px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 200px;
+}
+.containerGrid-contact .direct-contact img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.containerGrid-contact .direct-contact .formDirect-contact {
+  margin: 5px 0 5px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.containerGrid-contact .direct-contact .formDirect-contact div {
+  margin: 5px 0 5px 0;
+}
+.containerGrid-contact .direct-contact .formDirect-contact label {
+  margin-top: 15px;
+}
+.containerGrid-contact .direct-contact .formDirect-contact textarea {
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+  margin: 10px 0px 10px 0px;
+  background-color: #F7ECDE;
+  border-radius: 4px;
+  border: 2px solid black;
+  padding: 2px;
+  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
+}
+.containerGrid-contact .direct-contact .formDirect-contact .buttonLog-in {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile First */
 /******* TRABAJANDO PÁGINA LOG IN ***********/
 .containerGrid-logIn {
   width: 100%;
@@ -655,206 +815,4 @@ h1 {
 .infoBeneficios p {
   margin-top: 30px;
   line-height: 1em;
-}
-
-/*********** PAGINA DE CONTACTO ***********/
-.ig-contact {
-  grid-area: ig-contact;
-}
-
-.fb-contact {
-  grid-area: fb-contact;
-}
-
-.wpp-contact {
-  grid-area: wpp-contact;
-}
-
-.tel-contact {
-  grid-area: tel-contact;
-}
-
-.content-contact ul {
-  list-style-type: none;
-  line-height: 1.5em;
-}
-
-.direct-contact {
-  grid-area: direct-contact;
-}
-
-.aclaracionContacto {
-  grid-area: aclaracion;
-}
-
-.containerGrid-contact {
-  background-color: #151515;
-  width: 100%;
-  height: 1900px;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 28% repeat(2, 180px) 550px;
-  grid-template-areas: "aclaracion aclaracion" "ig-contact fb-contact" "wpp-contact tel-contact" "direct-contact direct-contact";
-  align-items: center;
-  gap: 5px;
-  color: white;
-}
-
-.aclaracionContacto {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 90%;
-  min-height: -webkit-max-content;
-  min-height: -moz-max-content;
-  min-height: max-content;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  gap: 15px;
-}
-
-.aclaracionContacto h1 {
-  margin-top: 15px;
-}
-
-.aclaracionContacto .horario {
-  line-height: 1.2em;
-  width: 80%;
-  background-color: #3C415C;
-  padding: 10px 10px 10px 10px;
-  border: 1px solid black;
-  border-radius: 4px;
-  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
-}
-
-.aclaracionContacto h2 {
-  text-decoration: underline;
-  margin-bottom: 8px;
-  padding-top: 2px;
-  line-height: 1em;
-}
-
-.aclaracionContacto ul {
-  list-style-type: none;
-  font-weight: bolder;
-}
-
-.aclaracionContacto p {
-  text-align: justify;
-  word-spacing: 0px;
-  margin-right: 10px;
-}
-
-.aclaracionContacto h3 {
-  margin-top: 0.2rem;
-}
-
-.ayudaInteraccion {
-  display: inline-block;
-  width: 100%;
-}
-
-.contact-img {
-  width: 40px;
-  height: 40px;
-}
-
-.elements-contact {
-  width: 150px;
-  height: 160px;
-  background-color: #3C415C;
-  border-radius: 4px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  text-align: center;
-  padding: 5px 5px 5px 5px;
-  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
-}
-
-.elements-contact a {
-  color: white;
-  text-decoration: none;
-}
-
-.elements-contact h3 {
-  margin-bottom: 5px;
-  text-decoration: underline;
-}
-
-.elements-contact p {
-  line-height: 13px;
-  font-size: 12.5px;
-}
-
-.formDirect-contact {
-  margin: 5px 0 5px 0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-}
-
-.formDirect-contact div {
-  margin: 5px 0 5px 0;
-}
-
-.formDirect-contact label {
-  margin-top: 15px;
-}
-
-.formDirect-contact textarea {
-  width: 100%;
-  height: 200px;
-  display: inline-block;
-  margin: 10px 0px 10px 0px;
-  background-color: #F7ECDE;
-  border-radius: 4px;
-  border: 2px solid black;
-  padding: 2px;
-  box-shadow: 0px 2px 9px 1px rgba(0, 0, 0, 0.74);
-}
-
-.formDirect-contact .buttonLog-in {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.direct-contact {
-  width: 310px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 200px;
-}
-
-.direct-contact img {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-.cerrarNavBar ul::before {
-  visibility: hidden;
-  transition: 0.5s;
-}
-
-.cerrarNavBar ul:valid ~ i::before,
-.cerrarNavBar ul:focus ~ i::before {
-  visibility: hidden;
 }/*# sourceMappingURL=styles.css.map */

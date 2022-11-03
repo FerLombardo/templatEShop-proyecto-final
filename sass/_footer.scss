@@ -1,0 +1,46 @@
+footer {
+    width: 100%;
+    height: min-content;
+    background: linear-gradient(180deg, rgba(21,21,21,1) 46%, rgba(48,27,63,1) 99%);
+    box-shadow: 0px 10px 20px 12px rgba(0, 0, 0, 0.739);
+    .footer-grid {
+        width: 100%;
+        height: min-content;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        gap: 1rem;
+        text-align: center;
+        .datafooter {
+            margin-top: 10px;
+            p, h5 {
+                color: white;
+                margin: 0;    
+            }
+            .contactEmblems {
+                margin-top: 1rem;
+                a {
+                    text-decoration: none;
+                }
+                img {
+                    height: 30px;
+                    width: 30px;
+                    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+                }
+            }
+        }
+        .ubicacion {
+            display: inline-block;
+            margin: 1rem 1rem 1rem 1rem;
+        }
+    }
+    .copyRight {
+        color: #F7ECDE;
+        font-size: x-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

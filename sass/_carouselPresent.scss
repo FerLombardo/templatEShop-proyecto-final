@@ -8,6 +8,11 @@
     flex-direction: column;
     #carouselPortada {
         position: relative;
+        img {
+            overflow: hidden;
+            height: 600px;
+            object-fit: cover;
+        }
         .complemento {
             width: 100%;
             height: 100%;

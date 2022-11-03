@@ -1,0 +1,20 @@
+.modal-content {
+    background-color: #efefef;
+    .modal-header {
+        .modal-title {
+        color: black;
+        font-size: x-large;
+        }
+    }
+    .modal-body {
+        color: black;
+        img{
+            width: 60%;
+            height: 30%;
+        }
+        p {
+            font-size: small;
+            margin-bottom: 5px;
+        }
+    }
+}
