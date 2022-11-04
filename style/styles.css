@@ -91,7 +91,7 @@ body {
 }
 .container-presentacion #carouselPortada .complemento .btn-genero a {
   text-decoration: none;
-  color: white;
+  color: black;
   background-color: transparent;
   text-transform: uppercase;
 }
@@ -324,7 +324,7 @@ body {
     width: 100%;
   }
   .d-block {
-    height: 925px;
+    height: 600px;
   }
   .logo-marca {
     height: 150px;
@@ -366,6 +366,11 @@ body {
     color: black !important;
     font-size: large;
     font-weight: bolder;
+  }
+}
+@media (min-width: 1023px) {
+  .d-block {
+    height: 922px !important;
   }
 }
 .modal-content {

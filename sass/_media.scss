@@ -12,9 +12,10 @@
     }
     #carouselPortada {
         width: 100%;
+        
     }
     .d-block {
-        height: 925px;
+        height: 600px;
     }
     .logo-marca {
         height: 150px;
@@ -62,5 +63,11 @@
             }
 
         }
+    }
+}
+
+@media(min-width:1023px) {
+    .d-block {
+        height: 922px!important;
     }
 }
