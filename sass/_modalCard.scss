@@ -4,6 +4,7 @@
         .modal-title {
         color: black;
         font-size: x-large;
+        margin-left: auto;
         }
     }
     .modal-body {
@@ -15,6 +16,16 @@
         p {
             font-size: small;
             margin-bottom: 5px;
+        }
+        h2 {
+            color: black;
+            margin-top: 1px;
+        }
+        h3 {
+            margin-top: 10px;
+        }
+        h5 {
+            margin-top: 5px;
         }
     }
 }
